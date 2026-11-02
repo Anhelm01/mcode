@@ -1,0 +1,19 @@
+[package]
+name = "mcode"
+version = "0.1.0"
+edition = "2024"
+description = "Pure ASCII Cyberpunk Live Clock & Morphing Canvas"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Anhelm01/mcode"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+crossterm = "0.29.0"
+fontdue = "0.9.5"
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg"] }
+libc = "0.2.191"
+
+[[bin]]
+name = "mcode"
+path = "src/main.rs"
